@@ -122,8 +122,8 @@ function App() {
   }
 
   return (
-    <div className="bg-info min-vh-100 text-white">
-      <div className="text-center">
+    <div  id="drum-machine" className="bg-info min-vh-100 text-white">
+      <div id="display" className="text-center">
         <h2>Drum Machine</h2>
         {audioClips.map( clip => (
           <Pad key={clip.id} clip={clip} volume={volume} setRecording={setRecording}/>
